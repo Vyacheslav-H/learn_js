@@ -6,12 +6,12 @@ class Worker {
         this._days = days;
     }
     
-    setDays(quantity) {
-      this._days = quantity;
+    setDays(days) {
+      this._days = days;
     }
 
-    setRate(quan) {
-      this._rate = quan;
+    setRate(rate) {
+      this._rate = rate;
     }
 
     getName() {

@@ -6,9 +6,9 @@ class Worker {
       this.days = days;
   }
   
-getSalary() {
-  return this.days * this.rate;
-}
+  getSalary() {
+    return this.days * this.rate;
+  }
 
 }
 
