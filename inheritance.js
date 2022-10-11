@@ -20,7 +20,8 @@ class Student extends User {
     }
     
     getCourse() {
-        return 2022 - this.year;
+        let currentYear= new Date().getFullYear();
+        return currentYear - this.year;
     }
 }
 
