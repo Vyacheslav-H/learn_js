@@ -1,3 +1,4 @@
+/* eslint-disable no-restricted-globals */
 // Обязателен ли "else"?
 // важность: 4
 // Следующая функция возвращает true, если параметр age больше 18.
@@ -7,23 +8,21 @@
 function checkAge(age) {
   if (age > 18) {
     return true;
-  } else {
-    // ...
-    return confirm('Родители разрешили?');
   }
+  // ...
+  return confirm('Родители разрешили?');
 }
 // Будет ли эта функция работать как-то иначе, если убрать else?
 
-function checkAge(age) {
+function checkAge1(age) {
   if (age > 18) {
     return true;
   }
   // ...
   return confirm('Родители разрешили?');
 }
-// Есть ли хоть одно отличие в поведении этого варианта? 
+// Есть ли хоть одно отличие в поведении этого варианта?
 // Ответ: Результат одинаковый
-
 
 // Перепишите функцию, используя оператор '?' или '||'
 // важность: 4
@@ -31,12 +30,11 @@ function checkAge(age) {
 
 // В ином случае она задаёт вопрос confirm и возвращает его результат.
 
-function checkAge(age) {
+function checkAge2(age) {
   if (age > 18) {
     return true;
-  } else {
-    return confirm('Родители разрешили?');
   }
+  return confirm('Родители разрешили?');
 }
 // Перепишите функцию, чтобы она делала то же самое, но без if, в одну строку.
 
@@ -45,12 +43,12 @@ function checkAge(age) {
 // Используя оператор ?
 // Используя оператор ||
 
-function checkAge(Age) {
-    return(age > 18) ? true :confirm('Родители разрешили?');
+function checkAge3(Age) {
+  return (age > 18) ? true : confirm('Родители разрешили?');
 }
 
-function checkAge(Age) {
-    return(age > 18) || confirm ('Родители разрешили?');
+function checkAge5(Age) {
+  return (age > 18) || confirm('Родители разрешили?');
 }
 
 // Функция min(a, b)
@@ -63,17 +61,17 @@ function checkAge(Age) {
 // min(3, -1) == -1
 // min(1, 1) == 1
 
-function minNumber(a,b) {
-    if (a < b) {
-        return (a);
-    } else {
-        return(b);
-    }
+function minNumber(a, b) {
+  if (a < b) {
+    return (a);
+  }
+  return (b);
 }
 
 // Функция pow(x,n)
 // важность: 4
-// Напишите функцию pow(x,n), которая возвращает x в степени n. Иначе говоря, умножает x на себя n раз и возвращает результат.
+// Напишите функцию pow(x,n), которая возвращает x в степени n.
+// Иначе говоря, умножает x на себя n раз и возвращает результат.
 
 // pow(3, 2) = 3 * 3 = 9
 // pow(3, 3) = 3 * 3 * 3 = 27
@@ -85,13 +83,13 @@ function minNumber(a,b) {
 // let result = pow(x,n)
 
 // function checkX(x) {
-//   if (x % 1 == 0 && x > 0) 
+//   if (x % 1 == 0 && x > 0)
 //     return true;
 //     return false;
 // }
 
 // function checkN(n) {
-//     if (n % 1 == 0 && x > 0) 
+//     if (n % 1 == 0 && x > 0)
 //       return true;
 //       return false;
 //   }
@@ -105,13 +103,13 @@ function minNumber(a,b) {
 // }
 // alert(result);               С ПРОВЕРКОЙ НА ЦЕЛЫЕ ЧИСЛА РАЗОБРАТЬСЯ НЕ СМОГ
 
+const x = prompt('Введите число,которое хотите возвести в степень');
+const n = prompt('Введите степень');
 
-let x = prompt('Введите число,которое хотите возвести в степень');
-let n = prompt('Введите степень');
-
-function pow(x,n) {
-    return(x ** n);
+function pow(x1, n2) {
+  return (x ** n);
 }
-alert(pow(x,n));
+alert(pow(x, n));
 
-// P.S. В этой задаче функция обязана поддерживать только натуральные значения n, т.е. целые от 1 и выше.
+// P.S. В этой задаче функция обязана поддерживать
+// только натуральные значения n, т.е. целые от 1 и выше.

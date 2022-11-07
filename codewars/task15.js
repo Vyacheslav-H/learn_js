@@ -1,4 +1,5 @@
-// Complete the function that accepts a string parameter, and reverses each word in the string. All spaces in the string should be retained.
+// Complete the function that accepts a string parameter,
+// and reverses each word in the string. All spaces in the string should be retained.
 
 function reverseWords(str) {
   let revWord = '';
@@ -7,7 +8,7 @@ function reverseWords(str) {
     if (str[i] !== ' ') {
       revWord = str[i] + revWord;
     } else {
-      revStr += revWord + ' ';
+      revStr += `${revWord} `;
       revWord = '';
     }
   }

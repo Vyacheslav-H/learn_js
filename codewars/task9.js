@@ -8,9 +8,9 @@
 // Note: The parameter is optional. So you have to give it a default value.
 
 function arr(N) {
-    let a = [];
-    for (let i = 0; i < N; i++) {
-      a.push(i);
-    }
-    return a;
+  const a = [];
+  for (let i = 0; i < N; i++) {
+    a.push(i);
   }
+  return a;
+}

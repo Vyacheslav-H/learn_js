@@ -1,51 +1,48 @@
+/* eslint-disable no-underscore-dangle */
 class Worker {
-    constructor(name, surname, rate, days) {
-        this._name = name;
-        this._surname = surname;
-        this._rate = rate;
-        this._days = days;
-    }
-    
-    setDays(days) {
-      this._days = days;
-    }
+  constructor(name, surname, rate, days) {
+    this._name = name;
+    this._surname = surname;
+    this._rate = rate;
+    this._days = days;
+  }
 
-    setRate(rate) {
-      this._rate = rate;
-    }
+  setDays(days) {
+    this._days = days;
+  }
 
-    getName() {
-      return this._name;
-    }
+  setRate(rate) {
+    this._rate = rate;
+  }
 
-    getSurname() {
-      return this._surname;
-    }
+  getName() {
+    return this._name;
+  }
 
-    getRate() {
-      return this._rate;
-    }
+  getSurname() {
+    return this._surname;
+  }
 
-    getDays() {
-      return this._days;
-    }
+  getRate() {
+    return this._rate;
+  }
 
-    getSalary() {
-      return this._days * this._rate;
-    }
+  getDays() {
+    return this._days;
+  }
 
+  getSalary() {
+    return this._days * this._rate;
+  }
 }
 
+const worker = new Worker('Иван', 'Иванов', 10, 31);
 
+console.log(worker.getName()); // выведет 'Иван'
+console.log(worker.getSurname()); // выведет 'Иванов'
+console.log(worker.getRate()); // выведет 10
+console.log(worker.getDays()); // выведет 31
 
-var worker = new Worker('Иван', 'Иванов', 10, 31);
-
-
-console.log(worker.getName()); //выведет 'Иван'
-console.log(worker.getSurname()); //выведет 'Иванов'
-console.log(worker.getRate()); //выведет 10
-console.log(worker.getDays()); //выведет 31
-
-worker.setRate(20); //увеличим ставку
-worker.setDays(10); //уменьшим дни
+worker.setRate(20); // увеличим ставку
+worker.setDays(10); // уменьшим дни
 console.log(worker.getSalary());

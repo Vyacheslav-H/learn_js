@@ -1,4 +1,5 @@
-// Write a function to convert a name into initials. This kata strictly takes two words with one space in between them.
+// Write a function to convert a name into initials.
+// This kata strictly takes two words with one space in between them.
 
 // The output should be two capital letters with a dot separating them.
 
@@ -8,10 +9,9 @@
 
 // patrick feeney => P.F
 
-function abbrevName(name){
-    let sName = name.split(" ");
-    return (sName[0][0] + '.' + sName[1][0].toUpperCase())
-  
-      // code away
-  
-  }
+function abbrevName(name) {
+  const sName = name.split(' ');
+  return (`${sName[0][0]}.${sName[1][0].toUpperCase()}`);
+
+  // code away
+}
