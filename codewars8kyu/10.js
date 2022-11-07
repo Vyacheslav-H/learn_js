@@ -3,10 +3,10 @@
 // Return the average of the given array rounded down to its nearest integer.
 
 // The array will never be empty.
-function getAverage(marks){
-    let res = 0;
-     for (let i = 0; i < marks.length; i+=1){
-       res +=marks[i]
-     }
-     return Math.floor(res/marks.length)
-   }
+function getAverage(marks) {
+  let res = 0;
+  for (let i = 0; i < marks.length; i += 1) {
+    res += marks[i];
+  }
+  return Math.floor(res / marks.length);
+}

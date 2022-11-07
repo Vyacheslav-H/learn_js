@@ -4,16 +4,15 @@
 
 // Note: The function accepts an integer and returns an integer
 
+function squareDigits(num) {
+  const number = `${num}`;
+  const nNum = new Array();
+  number.split('').map((n) => {
+    nNum.push(n ** 2);
+  });
 
-function squareDigits(num){
-    let number = '' + num;
-    let nNum = new Array();
-    number.split('').map(n => {
-      nNum.push(n**2);
-    });
-    
-    return parseInt(nNum.join(''));
-  }
+  return parseInt(nNum.join(''));
+}
 
 //   function squareDigits(num){
 //     return +num.toString().split('').map(i => i*i).join('');

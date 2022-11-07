@@ -11,9 +11,8 @@
 // If the initial velocity is non-positive, the return value should be 0
 
 function sakuraFall(v) {
-    if (v > 0 ) {
-    return (5*80.0/v)
-  } else {
-    return 0
+  if (v > 0) {
+    return (5 * 80.0 / v);
   }
-  }
+  return 0;
+}

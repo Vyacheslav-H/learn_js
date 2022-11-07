@@ -10,5 +10,5 @@
 
 // The size will always be positive and will only use whole numbers.
 function stringy(size) {
-    return "".padStart(size, '10');
-  }
+  return ''.padStart(size, '10');
+}

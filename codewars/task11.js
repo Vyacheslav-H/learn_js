@@ -12,19 +12,17 @@
 // 5, 2, "divide"   --> 2.5
 // Try to do it without using if statements!
 
-function arithmetic(a, b, operator){
-    if (operator === "add") {
-      return a + b;
-    } else if (operator === "subtract") {
-      return a - b;
-    } else if (operator === "multiply") {
-      return a * b;
-    } else if (operator === "divide") {
-      return a / b;
-    }
+function arithmetic(a, b, operator) {
+  if (operator === 'add') {
+    return a + b;
+  } if (operator === 'subtract') {
+    return a - b;
+  } if (operator === 'multiply') {
+    return a * b;
+  } if (operator === 'divide') {
+    return a / b;
   }
-
-
+}
 
 //   function arithmetic(a, b, operator){
 //     switch(operator) {

@@ -18,7 +18,7 @@
 // 25  =>  true
 // 26  =>  false
 
-var isSquare = function(n){
-    let res = Math.sqrt(n)
-    return (res % 1 === 0); 
-  };
+const isSquare = function (n) {
+  const res = Math.sqrt(n);
+  return (res % 1 === 0);
+};

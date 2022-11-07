@@ -8,10 +8,9 @@
 
 // patrick feeney => P.F
 
-function abbrevName(name){
-    let sName = name.split(" ");
-    return (sName[0][0] + '.' + sName[1][0].toUpperCase())
-  
-      // code away
-  
-  }
+function abbrevName(name) {
+  const sName = name.split(' ');
+  return (`${sName[0][0]}.${sName[1][0].toUpperCase()}`);
+
+  // code away
+}

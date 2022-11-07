@@ -1,5 +1,5 @@
 // Everybody has probably heard of the animal heads and legs problem from the earlier years at school. It goes:
-// “A farm contains chickens and cows. There are x heads and y legs. How many chickens and cows are there?” 
+// “A farm contains chickens and cows. There are x heads and y legs. How many chickens and cows are there?”
 // Where x <= 1000 and y <=1000
 // #Task
 
@@ -8,20 +8,19 @@
 // If either the heads & legs is negative, the result of your calculation is negative or the calculation is a float return "No solutions" (no valid cases), or [-1, -1] in COBOL.
 // In the form:
 // [Heads, Legs] = [72, 200]
-// VALID - [72, 200] =>             [44 , 28]   
+// VALID - [72, 200] =>             [44 , 28]
 //                              [Chickens, Cows]
 // INVALID - [72, 201] => "No solutions"
 // However, if 0 heads and 0 legs are given always return [0, 0] since zero heads must give zero animals.
 // There are many different ways to solve this, but they all give the same answer.
 // You will only be given integers types - however negative values (edge cases) will be given.
-function animals(heads, legs){
-    let cow = (legs - heads * 2) / 2;
-    let chicken = heads - (legs - heads * 2) / 2;
-    if (chicken < 0 || cow < 0 || Math.round(chicken) != chicken || Math.round(cow) != cow){
-      return "No solutions";
-    } else if(heads == 0 || legs == 0){
-      return [0, 0];
-    }else{
-      return [chicken, cow];
-    }
+function animals(heads, legs) {
+  const cow = (legs - heads * 2) / 2;
+  const chicken = heads - (legs - heads * 2) / 2;
+  if (chicken < 0 || cow < 0 || Math.round(chicken) != chicken || Math.round(cow) != cow) {
+    return 'No solutions';
+  } if (heads == 0 || legs == 0) {
+    return [0, 0];
   }
+  return [chicken, cow];
+}

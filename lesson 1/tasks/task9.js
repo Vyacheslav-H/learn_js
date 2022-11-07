@@ -1,9 +1,10 @@
+/* eslint-disable no-nested-ternary */
 // if (строка с нулём)
 // важность: 5
 // Выведется ли alert?
 
-if ("0") {
-  alert( 'Привет' ); // da
+if ('0') {
+  alert('Привет'); // da
 }
 
 // Название JavaScript
@@ -12,11 +13,11 @@ if ("0") {
 
 // Если пользователь вводит «ECMAScript», то показать: «Верно!», в противном случае – отобразить: «Не знаете? ECMAScript!»
 
-let OfficialName = prompt("Какое официальное название Js");
-if (OfficialName == "ECMAScript") {
-  alert("Верно!");
+const OfficialName = prompt('Какое официальное название Js');
+if (OfficialName == 'ECMAScript') {
+  alert('Верно!');
 } else {
-  alert("Не знаете? ECMAScript!");
+  alert('Не знаете? ECMAScript!');
 }
 
 // Покажите знак числа
@@ -28,15 +29,14 @@ if (OfficialName == "ECMAScript") {
 // 0, если значение равно нулю.
 // Предполагается, что пользователь вводит только числа.
 
-let number = prompt("Введите число");
+const number = prompt('Введите число');
 if (number > 0) {
-    alert(1);
+  alert(1);
 } else if (number < 0) {
-    alert(-1);
+  alert(-1);
 } else if (number == 0) {
-    alert(0);
+  alert(0);
 }
-
 
 // Перепишите 'if' в '?'
 // важность: 5
@@ -58,7 +58,6 @@ result = (a + b < 4) ? 'Мало' : 'Много';
 
 // Для читаемости рекомендуется разбить код на несколько строк.
 
-
 // if (login == 'Сотрудник') {
 //   message = 'Привет';
 // } else if (login == 'Директор') {
@@ -69,10 +68,10 @@ result = (a + b < 4) ? 'Мало' : 'Много';
 //   message = '';
 // }
 let login;
-let message = login === 'Сотрудник' 
-? 'Привет'
-: login === 'Директор' 
-? 'Здравствуйте' 
-: login === '' 
-? 'Нет логина' 
-: '';
+const message = login === 'Сотрудник'
+  ? 'Привет'
+  : login === 'Директор'
+    ? 'Здравствуйте'
+    : login === ''
+      ? 'Нет логина'
+      : '';

@@ -7,7 +7,7 @@ function reverseWords(str) {
     if (str[i] !== ' ') {
       revWord = str[i] + revWord;
     } else {
-      revStr += revWord + ' ';
+      revStr += `${revWord} `;
       revWord = '';
     }
   }

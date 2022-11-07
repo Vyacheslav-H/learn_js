@@ -8,7 +8,7 @@
 // In the case where both elevators are equally distant from the called floor, choose the elevator to the right.
 
 // You can assume that the inputs will always be valid integers between 0-2.
-function elevator(left, right, call){
-    return Math.abs(call - left) < Math.abs(call - right) ? 'left' : 'right';
-  }
-//tupaya hren'
+function elevator(left, right, call) {
+  return Math.abs(call - left) < Math.abs(call - right) ? 'left' : 'right';
+}
+// tupaya hren'

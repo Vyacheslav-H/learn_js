@@ -5,6 +5,6 @@
 // Make sure to round off the result to two decimal points.
 
 // Some useful associations relevant to this kata: 1 Imperial Gallon = 4.54609188 litres 1 Mile = 1.609344 kilometres
-function converter (mpg) {
-    return Number((1.609344 / 4.54609188 * mpg).toFixed(2)); //code to convert miles per imperial gallon to kilometers per liter
-  }
+function converter(mpg) {
+  return Number((1.609344 / 4.54609188 * mpg).toFixed(2)); // code to convert miles per imperial gallon to kilometers per liter
+}

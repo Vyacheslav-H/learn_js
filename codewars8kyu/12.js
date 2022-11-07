@@ -19,6 +19,4 @@
 // Firing with less than all gunners ready is non-optimum (this is not fire at will, this is fire by the captain's orders or walk the plank, dirty sea-dog!)
 
 // If all answers are 'aye' then Fire! if one or more are 'nay' then Shiver me timbers!
-const cannonsReady = (gunners) => {
-    return Object.values(gunners).includes('nay') ? 'Shiver me timbers!' : 'Fire!';
-  }
+const cannonsReady = (gunners) => (Object.values(gunners).includes('nay') ? 'Shiver me timbers!' : 'Fire!');

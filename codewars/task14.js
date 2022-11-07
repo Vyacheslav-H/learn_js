@@ -7,12 +7,10 @@
 // Details
 // You will be given a string of numbers and letters mixed up, you have to return all the numbers in that string in the order they occur.
 
-
-var FilterString = function(value) {
-  let res = "";
-  for(let i = 0; i < value.length; i++){
-    if(!isNaN(value[i]))
-      res += value[i];
+const FilterString = function (value) {
+  let res = '';
+  for (let i = 0; i < value.length; i++) {
+    if (!isNaN(value[i])) { res += value[i]; }
   }
   return parseInt(res);
 };
