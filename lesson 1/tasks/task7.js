@@ -47,4 +47,4 @@ undefined + 1; // NaN
 const a3 = prompt('Первое число?', 1);
 const b3 = prompt('Второе число?', 2);
 
-alert(+a + +b); // 12;
+alert(+a3 + +b3); // 12;

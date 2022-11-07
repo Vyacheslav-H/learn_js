@@ -1,3 +1,4 @@
+/* eslint-disable no-restricted-globals */
 // Перепишите с использованием функции-стрелки
 // Замените код Function Expression стрелочной функцией:
 

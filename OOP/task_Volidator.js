@@ -1,3 +1,4 @@
+/* eslint-disable class-methods-use-this */
 const re = /\S+@\S+\.\S+/;
 
 class Validator {
@@ -22,6 +23,7 @@ class Validator {
   }
 
   isPhone(str) {
+    // eslint-disable-next-line no-useless-escape
     const phone = str.match(/\+375\ \([0-9]{2}\)\ [0-9]{3}-[0-9]{2}-[0-9]{2}/);
     return phone !== null;
   }

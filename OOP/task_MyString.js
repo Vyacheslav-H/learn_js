@@ -1,6 +1,5 @@
+/* eslint-disable class-methods-use-this */
 class MyString {
-  constructor() {}
-
   reverse(str) {
     return str.split('').reverse().join('');
   }

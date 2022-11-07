@@ -1,3 +1,4 @@
+/* eslint-disable max-classes-per-file */
 class User {
   constructor(name, surname) {
     this.name = name;

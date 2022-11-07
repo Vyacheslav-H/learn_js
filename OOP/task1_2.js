@@ -1,3 +1,4 @@
+/* eslint-disable no-underscore-dangle */
 class Worker {
   constructor(name, surname, rate, days) {
     this._name = name;
