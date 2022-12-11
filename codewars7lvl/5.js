@@ -1,3 +1,4 @@
+/* eslint-disable no-param-reassign */
 function getSum(a, b) {
   let res = 0;
   if (a === b) return a;
